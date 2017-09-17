@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		002206205DD0AE160B1FB440 /* Pods_SmackChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244AA540E9996EF743E3ADF0 /* Pods_SmackChat.framework */; };
+		671824F41F6EF15A0041A8B2 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671824F31F6EF15A0041A8B2 /* CreateAccountVC.swift */; };
 		67364EFD1F69C80100D445C7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AA9AD81F687A9800CE6357 /* SWRevealViewController.m */; };
 		675B0B121F68782400BEC18C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675B0B111F68782400BEC18C /* AppDelegate.swift */; };
 		675B0B171F68782400BEC18C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675B0B151F68782400BEC18C /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		244AA540E9996EF743E3ADF0 /* Pods_SmackChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmackChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AEA9A508E82589F2DA8724 /* Pods-SmackChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmackChat/Pods-SmackChat.release.xcconfig"; sourceTree = "<group>"; };
+		671824F31F6EF15A0041A8B2 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		675B0B0E1F68782400BEC18C /* SmackChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmackChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		675B0B111F68782400BEC18C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		675B0B161F68782400BEC18C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				67AA9ADC1F687C5A00CE6357 /* ChatVC.swift */,
 				67AA9ADE1F687C6C00CE6357 /* ChannelVC.swift */,
 				67DEA3151F6DCDB700CC6685 /* LoginVC.swift */,
+				671824F31F6EF15A0041A8B2 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				67AA9ADD1F687C5A00CE6357 /* ChatVC.swift in Sources */,
 				67AA9ADF1F687C6C00CE6357 /* ChannelVC.swift in Sources */,
+				671824F41F6EF15A0041A8B2 /* CreateAccountVC.swift in Sources */,
 				67DEA3161F6DCDB700CC6685 /* LoginVC.swift in Sources */,
 				67DEA3111F6DBD2300CC6685 /* GradientView.swift in Sources */,
 				675B0B121F68782400BEC18C /* AppDelegate.swift in Sources */,

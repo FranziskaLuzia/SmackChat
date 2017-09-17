@@ -60,7 +60,7 @@
                                 <state key="normal" image="addChannelButton"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vT-Ee-WCP">
-                                <rect key="frame" x="95" y="593" width="46" height="33"/>
+                                <rect key="frame" x="105" y="593" width="46" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AJw-lV-D0e">
-                                <rect key="frame" x="0.0" y="572" width="75" height="75"/>
+                                <rect key="frame" x="10" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="2Hh-Fs-2w5"/>
                                     <constraint firstAttribute="height" constant="75" id="Whh-40-M7U"/>
@@ -118,7 +118,7 @@
                             <constraint firstItem="AJw-lV-D0e" firstAttribute="top" secondItem="hcS-h7-OlZ" secondAttribute="bottom" constant="20" id="Og1-rY-rNU"/>
                             <constraint firstItem="Fy8-Ze-18e" firstAttribute="leading" secondItem="1mC-YN-ubq" secondAttribute="leading" constant="12" id="RF0-MT-qYh"/>
                             <constraint firstItem="3vT-Ee-WCP" firstAttribute="leading" secondItem="AJw-lV-D0e" secondAttribute="trailing" constant="20" id="b5v-ig-uts"/>
-                            <constraint firstItem="AJw-lV-D0e" firstAttribute="leading" secondItem="1mC-YN-ubq" secondAttribute="leading" id="lol-u5-HN4"/>
+                            <constraint firstItem="AJw-lV-D0e" firstAttribute="leading" secondItem="1mC-YN-ubq" secondAttribute="leading" constant="10" id="lol-u5-HN4"/>
                             <constraint firstItem="1mC-YN-ubq" firstAttribute="bottom" secondItem="AJw-lV-D0e" secondAttribute="bottom" constant="20" id="oea-oZ-A3e"/>
                             <constraint firstItem="Nv8-Ah-rEL" firstAttribute="leading" secondItem="1mC-YN-ubq" secondAttribute="leading" constant="12" id="w54-Ph-wAT"/>
                             <constraint firstItem="hcS-h7-OlZ" firstAttribute="top" secondItem="KiP-mn-iBX" secondAttribute="bottom" constant="20" id="xWD-fQ-lbH"/>

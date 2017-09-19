@@ -15,6 +15,7 @@
 		675B0B191F68782400BEC18C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675B0B181F68782400BEC18C /* Assets.xcassets */; };
 		675B0B1C1F68782400BEC18C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675B0B1A1F68782400BEC18C /* LaunchScreen.storyboard */; };
 		6778815B1F71B49500AEB24E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778815A1F71B49500AEB24E /* AuthService.swift */; };
+		6778815D1F71BEFE00AEB24E /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778815C1F71BEFE00AEB24E /* RoundedButton.swift */; };
 		67AA9ADD1F687C5A00CE6357 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AA9ADC1F687C5A00CE6357 /* ChatVC.swift */; };
 		67AA9ADF1F687C6C00CE6357 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AA9ADE1F687C6C00CE6357 /* ChannelVC.swift */; };
 		67DEA3111F6DBD2300CC6685 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DEA3101F6DBD2300CC6685 /* GradientView.swift */; };
@@ -33,6 +34,7 @@
 		675B0B1B1F68782400BEC18C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		675B0B1D1F68782400BEC18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6778815A1F71B49500AEB24E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		6778815C1F71BEFE00AEB24E /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		67AA9AD61F687A9700CE6357 /* SmackChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmackChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		67AA9AD71F687A9800CE6357 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		67AA9AD81F687A9800CE6357 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				67DEA3101F6DBD2300CC6685 /* GradientView.swift */,
+				6778815C1F71BEFE00AEB24E /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67AA9ADD1F687C5A00CE6357 /* ChatVC.swift in Sources */,
+				6778815D1F71BEFE00AEB24E /* RoundedButton.swift in Sources */,
 				67AA9ADF1F687C6C00CE6357 /* ChannelVC.swift in Sources */,
 				671824F41F6EF15A0041A8B2 /* CreateAccountVC.swift in Sources */,
 				6778815B1F71B49500AEB24E /* AuthService.swift in Sources */,

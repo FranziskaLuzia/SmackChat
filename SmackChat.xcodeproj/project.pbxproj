@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		002206205DD0AE160B1FB440 /* Pods_SmackChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244AA540E9996EF743E3ADF0 /* Pods_SmackChat.framework */; };
 		671824F41F6EF15A0041A8B2 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671824F31F6EF15A0041A8B2 /* CreateAccountVC.swift */; };
+		671C9EC91F7AD0B5009CF7A4 /* ProfileVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C9EC71F7AD0B5009CF7A4 /* ProfileVCViewController.swift */; };
+		671C9ECA1F7AD0B5009CF7A4 /* ProfileVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671C9EC81F7AD0B5009CF7A4 /* ProfileVCViewController.xib */; };
 		6729AA981F76B9A1006F1A9E /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729AA971F76B9A1006F1A9E /* AvatarPickerVC.swift */; };
 		6729AA9A1F76BB3E006F1A9E /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729AA991F76BB3E006F1A9E /* AvatarCell.swift */; };
 		6729AA9C1F782690006F1A9E /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729AA9B1F782690006F1A9E /* CircleImage.swift */; };
@@ -31,6 +33,8 @@
 		244AA540E9996EF743E3ADF0 /* Pods_SmackChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmackChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AEA9A508E82589F2DA8724 /* Pods-SmackChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmackChat/Pods-SmackChat.release.xcconfig"; sourceTree = "<group>"; };
 		671824F31F6EF15A0041A8B2 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		671C9EC71F7AD0B5009CF7A4 /* ProfileVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVCViewController.swift; sourceTree = "<group>"; };
+		671C9EC81F7AD0B5009CF7A4 /* ProfileVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVCViewController.xib; sourceTree = "<group>"; };
 		6729AA971F76B9A1006F1A9E /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		6729AA991F76BB3E006F1A9E /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		6729AA9B1F782690006F1A9E /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -66,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		671C9ECB1F7AD0D8009CF7A4 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				671C9EC81F7AD0B5009CF7A4 /* ProfileVCViewController.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		675B0B051F68782400BEC18C = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +99,7 @@
 		675B0B101F68782400BEC18C /* SmackChat */ = {
 			isa = PBXGroup;
 			children = (
+				671C9ECB1F7AD0D8009CF7A4 /* Xibs */,
 				677881591F71B48000AEB24E /* Services */,
 				67DEA3121F6DCA0C00CC6685 /* Utilities */,
 				67AA9AD51F687A4A00CE6357 /* Supporting Files */,
@@ -129,6 +142,7 @@
 				67DEA3151F6DCDB700CC6685 /* LoginVC.swift */,
 				671824F31F6EF15A0041A8B2 /* CreateAccountVC.swift */,
 				6729AA971F76B9A1006F1A9E /* AvatarPickerVC.swift */,
+				671C9EC71F7AD0B5009CF7A4 /* ProfileVCViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				675B0B1C1F68782400BEC18C /* LaunchScreen.storyboard in Resources */,
+				671C9ECA1F7AD0B5009CF7A4 /* ProfileVCViewController.xib in Resources */,
 				675B0B191F68782400BEC18C /* Assets.xcassets in Resources */,
 				675B0B171F68782400BEC18C /* Main.storyboard in Resources */,
 			);
@@ -301,6 +316,7 @@
 			files = (
 				67AA9ADD1F687C5A00CE6357 /* ChatVC.swift in Sources */,
 				6729AA981F76B9A1006F1A9E /* AvatarPickerVC.swift in Sources */,
+				671C9EC91F7AD0B5009CF7A4 /* ProfileVCViewController.swift in Sources */,
 				6778815D1F71BEFE00AEB24E /* RoundedButton.swift in Sources */,
 				6729AA9C1F782690006F1A9E /* CircleImage.swift in Sources */,
 				67AA9ADF1F687C6C00CE6357 /* ChannelVC.swift in Sources */,

@@ -72,6 +72,7 @@ class CreateAccountVC: UIViewController {
     @IBAction func pickAvatarPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
+    
     @IBAction func pickBGColorPressed(_ sender: Any) {
         let r = CGFloat(arc4random_uniform(255)) / 255
         let g = CGFloat(arc4random_uniform(255)) / 255
@@ -97,5 +98,4 @@ class CreateAccountVC: UIViewController {
     @objc func handleTap() {
         view.endEditing(true)
     }
-    
 }

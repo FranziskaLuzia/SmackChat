@@ -27,6 +27,11 @@ class CreateAccountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
+        let rnd = arc4random_uniform(100)
+        emailTxt.text = "test@test\(rnd).com"
+        usernameTxt.text = "Flo"
+        passTxt.text = "test"
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -51,21 +56,19 @@ class CreateAccountVC: UIViewController {
         guard let name = usernameTxt.text , usernameTxt.text != "" else { return }
         guard let email = emailTxt.text , emailTxt.text != "" else { return }
         guard let pass = passTxt.text , passTxt.text != "" else { return }
-        AuthService.instance.registerUser(email: email, password: pass)
-        { (success) in
-            if success {
-                AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
-                    if success {
-                        AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in if success {
-                                self.spinner.isHidden = true
-                                self.spinner.stopAnimating()
-                                self.performSegue(withIdentifier: UNWIND, sender: nil)
-                                NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
-                            }
-                        })
-                    }
+
+        AuthService.instance.registerUser(email: email, password: pass) { success in
+            guard success else { return }
+            AuthService.instance.loginUser(email: email, password: pass, completion: { success in
+                guard success else { return }
+                AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { success in
+                    guard success else { return }
+                    self.spinner.isHidden = true
+                    self.spinner.stopAnimating()
+                    self.performSegue(withIdentifier: UNWIND, sender: nil)
+                    NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                 })
-            }
+            })
         }
     }
     

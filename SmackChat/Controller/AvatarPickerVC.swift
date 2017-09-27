@@ -21,7 +21,6 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -39,6 +38,8 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 28
     }
+    
+    
 
     // Actions
     
@@ -55,12 +56,10 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         var numberOfColumns: CGFloat = 3
         if UIScreen.main.bounds.width > 320 {
             numberOfColumns = 4
         }
-        
         let spaceBetweenCells : CGFloat = 10
         let padding : CGFloat = 40
         let cellDimension = ((collectionView.bounds.width - padding) - (numberOfColumns - 1) * spaceBetweenCells) / numberOfColumns

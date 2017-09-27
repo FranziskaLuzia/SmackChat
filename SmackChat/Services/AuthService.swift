@@ -107,7 +107,7 @@ class AuthService {
             "Content-Type": "application/json; charset=utf-8"
         ]
         
-        Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON {
+        Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString {
             (response) in
             
             if response.result.error == nil {

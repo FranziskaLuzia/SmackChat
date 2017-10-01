@@ -30,7 +30,6 @@ class ChannelVC: UIViewController {
         } else {
             performSegue(withIdentifier: TO_LOGIN, sender: nil)
         }
-        
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
     

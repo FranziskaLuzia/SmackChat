@@ -61,12 +61,18 @@ class CreateAccountVC: UIViewController {
             guard success else { return }
             AuthService.instance.loginUser(email: email, password: pass, completion: { success in
                 guard success else { return }
-                AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { success in
-                    guard success else { return }
+                AuthService.instance.addUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { success in
+                    if success {
+                        self.performSegue(withIdentifier: UNWIND, sender: nil)
+                        NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+                    } else {
+                        let alert = UIAlertController(title: "Error", message: "Add User call failed.", preferredStyle: .alert)
+                        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                        alert.addAction(cancelButton)
+                        self.show(alert, sender: self)
+                    }
                     self.spinner.isHidden = true
                     self.spinner.stopAnimating()
-                    self.performSegue(withIdentifier: UNWIND, sender: nil)
-                    NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                 })
             })
         }

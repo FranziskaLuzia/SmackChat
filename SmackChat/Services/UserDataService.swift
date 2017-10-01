@@ -27,7 +27,7 @@ class UserDataService {
     }
     
     func setAvatarName(avatarName: String) {
-        self.avatarName = avatarName 
+        self.avatarName = avatarName
     }
     
     func returnUIColor(components: String) -> UIColor {

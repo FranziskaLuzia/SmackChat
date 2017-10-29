@@ -60,7 +60,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             for (typingUser, channel) in typingUsers {
                 if typingUser != UserDataService.instance.name && channel == channelId {
                     if names == "" {
-                    names == typingUser
+                    names = typingUser
                     } else {
                         names = "\(names), \(typingUser)"
                     }
@@ -123,6 +123,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 if success {
                     self.messageTextBox.text = ""
                     self.messageTextBox.resignFirstResponder()
+                    SocketService.instance.socket.emit("stopType", UserDataService.instance.name, channelId)
                 }
             })
         }

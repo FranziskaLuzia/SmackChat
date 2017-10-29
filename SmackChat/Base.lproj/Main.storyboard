@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -600,6 +600,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="urB-xG-AG7" eventType="editingChanged" id="RiX-ch-B12"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eW-V8-sPl">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
@@ -669,9 +672,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qo1-gd-Asj">
+                                <rect key="frame" x="8" y="604.5" width="30" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qo1-gd-Asj" firstAttribute="leading" secondItem="KNM-Hh-tMf" secondAttribute="leading" constant="8" id="1re-4w-pUL"/>
                             <constraint firstItem="W1L-zN-e9j" firstAttribute="top" secondItem="32S-Yl-Kfl" secondAttribute="bottom" constant="30" id="3JA-u1-Qh0"/>
                             <constraint firstItem="32S-Yl-Kfl" firstAttribute="top" secondItem="8JX-fJ-nO5" secondAttribute="bottom" id="FCq-CL-aUu"/>
                             <constraint firstItem="5eW-V8-sPl" firstAttribute="centerY" secondItem="W1L-zN-e9j" secondAttribute="centerY" id="Lf2-Ll-8pS"/>
@@ -683,6 +693,7 @@
                             <constraint firstItem="W1L-zN-e9j" firstAttribute="bottom" secondItem="KNM-Hh-tMf" secondAttribute="bottom" id="exY-R0-FMs"/>
                             <constraint firstItem="8JX-fJ-nO5" firstAttribute="leading" secondItem="KNM-Hh-tMf" secondAttribute="leading" id="hcd-IM-7g8"/>
                             <constraint firstItem="32S-Yl-Kfl" firstAttribute="leading" secondItem="KNM-Hh-tMf" secondAttribute="leading" id="pn6-am-aMx"/>
+                            <constraint firstItem="W1L-zN-e9j" firstAttribute="top" secondItem="qo1-gd-Asj" secondAttribute="bottom" constant="6" id="qN0-Nq-89f"/>
                             <constraint firstItem="8JX-fJ-nO5" firstAttribute="trailing" secondItem="KNM-Hh-tMf" secondAttribute="trailing" id="qik-Mu-PwR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KNM-Hh-tMf"/>
@@ -691,7 +702,9 @@
                         <outlet property="channelNameLabel" destination="bTV-cD-iag" id="oXh-xz-QZW"/>
                         <outlet property="menuBtn" destination="k7Z-Q9-XAK" id="7Uc-fX-Ybj"/>
                         <outlet property="messageTextBox" destination="W1L-zN-e9j" id="peA-EU-jKy"/>
+                        <outlet property="sendBtn" destination="5eW-V8-sPl" id="vre-Ak-eAF"/>
                         <outlet property="tableView" destination="32S-Yl-Kfl" id="d5S-xy-7xJ"/>
+                        <outlet property="typingUsersLabel" destination="qo1-gd-Asj" id="2Og-c4-EYs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMX-0H-p6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
